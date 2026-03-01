@@ -3,7 +3,7 @@
 	"name": "mumble-intercom",
 	"shortname": "mumble",
 	"description": "Mumble VoIP intercom controller for broadcast/live production",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-mumble-intercom.git",
 	"bugs": "https://github.com/bitfocus/companion-module-mumble-intercom/issues",

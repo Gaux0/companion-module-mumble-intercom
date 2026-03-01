@@ -1,6 +1,6 @@
 {
 	"name": "companion-module-mumble-intercom",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Mumble Intercom Director Console for Bitfocus Companion",
 	"license": "MIT",
 	"main": "dist/main.js",

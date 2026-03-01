@@ -133,8 +133,8 @@ Stream Deck XL Layout (example):
 │ Camera1  │ Camera2  │ Camera3  │ Camera4  │ Camera5  │ Camera6  │ Camera7  │ Camera8  │
 │ MUTED    │ TALKING  │ OFFLINE  │ OPEN     │ MUTED    │ MUTED    │ OFFLINE  │ MUTED    │
 ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-│ Audio_Op │ Graphics │ Replay   │ Floor    │         │         │ MUTE ALL │ OPEN ALL │
-│ OPEN     │ MUTED    │ OFFLINE  │ TALKING  │         │         │          │          │
+│ Audio_Op │ Graphics │ Replay   │ Floor    │ STATUS   │         │ MUTE ALL │ OPEN ALL │
+│ OPEN     │ MUTED    │ OFFLINE  │ TALKING  │ 8on 3opn │         │          │          │
 └─────────┴─────────┴─────────┴─────────┴─────────┴─────────┴─────────┴─────────┘
 ```
 
@@ -143,6 +143,20 @@ The director can:
 - **Tap once** to toggle any crew member's mic
 - **Mute/Open All** for scene transitions
 - **Spot the yellow** — someone muted wants to speak!
+- **Status button** — Always see a live count of online and open users
+
+## Presets (Drag & Drop)
+
+The module includes ready-to-use button presets. Go to the **Presets** tab in Companion and drag them onto your Stream Deck.
+
+| Preset | Category | Description |
+|--------|----------|-------------|
+| **Slot 1–16** | Camera Slots | Toggle mute button per user, with status text and color feedback |
+| **Open All** | Control | Unmute all configured slots (green) |
+| **Mute All** | Control | Mute all configured slots (red) |
+| **Status** | Info | Displays live count of online users and open (unmuted) users |
+
+The **Status** button shows `Online: X / Open: Y` and updates in real time — useful to keep at a glance how many crew members are connected and active.
 
 ## Technical Details
 

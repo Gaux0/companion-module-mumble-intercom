@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2026-03-01
+
+### Improved
+
+- Added documentation for Status preset button (online/open user counts)
+- Added Presets section to README with full preset reference table
+- Updated Stream Deck layout diagram to show Status button
+- Updated HELP.md with presets reference
+
 ## [1.0.0] - 2026-03-01
 
 ### Added

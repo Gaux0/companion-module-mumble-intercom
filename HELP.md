@@ -41,6 +41,14 @@ Control a Mumble VoIP server from your Stream Deck. Designed for broadcast and l
 - **Open All**: Unmute all configured slots
 - **Mute All**: Mute all configured slots
 
+## Presets
+
+Drag-and-drop button presets are available in the Presets tab:
+
+- **Slot 1–16**: Toggle mute per user with color feedback
+- **Open All / Mute All**: Bulk control buttons
+- **Status**: Live display of online and open user counts
+
 ## Variables
 
 - `$(mumble:slot_N_status)` - Status text (OFFLINE/MUTED/WANTS TALK/OPEN/TALKING)
