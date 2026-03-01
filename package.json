@@ -1,0 +1,20 @@
+{
+	"name": "companion-module-mumble-intercom",
+	"version": "1.0.0",
+	"description": "Mumble Intercom Director Console for Bitfocus Companion",
+	"license": "MIT",
+	"main": "dist/main.js",
+	"type": "module",
+	"scripts": {
+		"build": "npx tsc -p tsconfig.json",
+		"dev": "npx tsc -p tsconfig.json --watch"
+	},
+	"dependencies": {
+		"@companion-module/base": "~1.14.0",
+		"protobufjs": "^7.4.0"
+	},
+	"devDependencies": {
+		"typescript": "^5.4.0",
+		"@types/node": "^20.0.0"
+	}
+}
