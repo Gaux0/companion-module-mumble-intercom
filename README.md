@@ -3,7 +3,44 @@
 A [Bitfocus Companion](https://bitfocus.io/companion) module to control a [Mumble](https://www.mumble.info/) VoIP server as a broadcast intercom system using Elgato Stream Deck.
 
 <p align="center">
-  <img src="docs/architecture.svg" alt="Architecture overview" width="800"/>
+
+```mermaid
+graph LR
+    subgraph SD["🎛️ Stream Deck XL"]
+        B1["CAM 1<br/>MUTED"]
+        B2["CAM 2<br/>TALKING"]
+        B3["CAM 3<br/>WANTS TALK"]
+        B4["MUTE ALL"]
+        B5["STATUS<br/>8on 3opn"]
+    end
+
+    subgraph CP["⚙️ Companion + Module"]
+        MOD["mumble-intercom<br/>─────────────<br/>✓ Voice Detection<br/>✓ Server Mute<br/>✓ User Tracking"]
+    end
+
+    subgraph MS["🖥️ Mumble Server"]
+        U1["🎤 Camera 1"]
+        U2["🔇 Camera 2"]
+        U3["🎤 Audio Op"]
+    end
+
+    subgraph CREW["📱 Crew · 4G/WiFi"]
+        C1["Camera Op 1"]
+        C2["Camera Op 2"]
+        C3["Audio Op"]
+    end
+
+    SD -- "Actions" --> CP
+    CP -- "TLS + Protobuf" --> MS
+    MS -. "Voice Packets" .-> CP
+    MS <-. "4G / WiFi" .-> CREW
+
+    style SD fill:#1c2530,stroke:#3a4a5a,color:#e8edf3
+    style CP fill:#1c2530,stroke:#4a9eff,color:#e8edf3
+    style MS fill:#1c2530,stroke:#44aa44,color:#e8edf3
+    style CREW fill:#1c2530,stroke:#3a4a5a,color:#e8edf3
+```
+
 </p>
 
 Designed for **live production directors** who need to manage crew communications from a physical control surface — mute/unmute camera operators, see who's talking, and manage the intercom bus in real time.
